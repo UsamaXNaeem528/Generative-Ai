@@ -27,7 +27,7 @@ print(std_dict['name'], std_dict['grades'])
 print(std_dict.get('phone_no'), std_dict.get('education'))
 
 
-'''🔹 2. Change Items Update the value for a key.'''
+'''🔹 2. Change Items Update sthe value for a key.'''
 std_dict['grades'] = 'B+'
 print(std_dict)
 
@@ -98,5 +98,3 @@ print(students_records)
 '''
 students_records.pop('std_2')
 print(students_records)
-
-
