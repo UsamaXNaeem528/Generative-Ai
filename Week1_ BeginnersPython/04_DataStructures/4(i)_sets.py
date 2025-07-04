@@ -1,50 +1,53 @@
 '''
-🔹 5. Set Operations (Mathematics Style)
-i. ✴️ Union (combine sets) ==> a|b
-ii. ✴️ Intersection (common items)  ==> a&b
-iii. ✴️ Difference (items in a but not in b)   
-iv. ✴️ Symmetric Difference 
-(items in either, but not both (don't show common values in both set show only uncommon))
+🧺 Python Sets
+Written using curly braces {}
+
+Duplicates are not allowed
+
+Unordered (no indexing)
+
+Can contain different data types
 '''
-#==================Union=====================#
-a = {1,2,3}
-b = {2,4,5,6}
-a_union_b = a | b
-print(a_union_b)
-print(a)
+'''✅ Creating a Set:'''
+my_set = {1, 2, 3, 4}
 
-#==================Intersection===============#
-a_intersectio_b = a.intersection(b)
-print(a_intersectio_b)
+# You can also use the set() constructor:
+prime_no_set = set([1, 3, 5, 7, 9, 13])
+print(prime_no_set)
 
-#==================Difference=================#
-a_difference_b = a.difference(b) 
-print(a_difference_b)
+'''🔸 Properties of Sets'''
+# | Property      | Set Behavior                 |
+# | ------------- | ---------------------------- |
+# | No duplicates | `{1, 2, 2, 3}` → `{1, 2, 3}` |
+# | No indexing   | You **can't** do `my_set[0]` |
+# | Mutable       | You can add/remove elements  |
+# | Iterable      | You can loop through it      |
 
-#==================Symmetric Difference=================#
-a_SymmetricDifference_b = a.symmetric_difference(b)
-print(a_SymmetricDifference_b)
+'''🔹 1. Add Items to a Set'''
+my_set.add(5)
+print(my_set)
 
+'''🔹 2. Update Set (Add multiple items)'''
+my_set.update([6, 7, 8, 9, 10])
+print(my_set)
 
-'''🔹 6. Set Comparison
-| Method         | Meaning            |
-| -------------- | ------------------ |
-| `issubset()`   | a ⊆ b              |==> Is one set inside another?
-| `issuperset()` | a ⊇ b              |==> Does one set contain another?
-| `isdisjoint()` | No common elements |==> Do the sets have nothing in common?
+'''🔹 3. Remove Items
+| Method      | Behavior                            |
+| ----------- | ----------------------------------- |
+| `remove()`  | Removes item, error if not found    |
+| `discard()` | Removes item, no error if not found |
+| `pop()`     | Removes a random item               |
+| `clear()`   | Removes all items                   |
 '''
 
+my_set.remove(5)   #* remove one item from set.
+# print(my_set)
 
 
-
-
-
-
-
-
-
-
-
+'''🔹 4. Looping Through a Set'''
+for item in my_set:
+    print(item)
+    
 
 
 
