@@ -48,6 +48,13 @@ my_set.remove(5)   #* remove one item from set.
 for item in my_set:
     print(item)
     
+    
+#! set are immutable though the index, can access it using index but it poosible using list                                                                                                                                                                   
+fruits_set = {'apple', 'banana', 'orange', 'kiwi'}
+temp = list(fruits_set)
+temp[2] = 'grapes'
+fruits_set = set(temp)
+print(fruits_set)
 
 
 
