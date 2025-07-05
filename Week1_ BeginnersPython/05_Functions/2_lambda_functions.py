@@ -31,6 +31,9 @@ natural_nums = (1,2,3,4,5,6,7,8,10,11,12,13,14,15)
 odd_nums = tuple(filter(lambda x : x % 2 != 0, natural_nums))
 print(odd_nums)   #* (1, 3, 5, 7, 11, 13, 15)
 
+
+
+
 '''
 🆚 Regular Function vs Lambda
 | Feature        | Regular Function | Lambda Function        |
@@ -41,4 +44,28 @@ print(odd_nums)   #* (1, 3, 5, 7, 11, 13, 15)
 | Return keyword | Required         | Implicit (no `return`) |
 '''
 
+'''Sorted Function
+sorted(iterable, key=None, reverse=False)
+'''
 
+students = [
+    {'name': 'John', 'age': 20, 'grade': 85},
+    {'name': 'Alice', 'age': 22, 'grade': 90},
+    {'name': 'Bob', 'age': 20, 'grade': 85},
+    {'name': 'Charlie', 'age': 21, 'grade': 90},
+    {'name': 'David', 'age': 19,'grade':80}
+]
+
+sorted_std = sorted(students, key=lambda x:(-x['grade'], x['age'], x['name']))
+for x in sorted_std:
+    print(x)
+
+       
+'''working
+🔹 lambda x: (-x['grade'], x['age'], x['name'])
+
+This tells Python how to prioritize sorting:
+-x['grade']: Sort by grade descending (higher grades come first).
+x['age']: If grades are the same, sort by age ascending (younger students first).
+x['name']: If grade and age are same, sort alphabetically by name.
+'''
