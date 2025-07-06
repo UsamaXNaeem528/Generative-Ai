@@ -12,7 +12,7 @@ with open(r'Week1_ BeginnersPython\07_File_handling\data.csv', 'w') as file:
     writer = csv.writer(file)
     writer.writerow(data)
     
-''' 7.✅Working with CSV Files'''
+''' 7.✅Working with JSON Files'''
 import json
 '''Reading a json'''
 with open(r'Week1_ BeginnersPython\07_File_handling\data.json','r') as file:
