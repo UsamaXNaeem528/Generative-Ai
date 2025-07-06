@@ -53,8 +53,16 @@ for y in students_grades:
 
 print(new_std_grades)
 
-    
 
+'''
+Situation	                        |    Recommended Approach
+--------------------------------------------------------------------
+Need index only	                    |    i in range(len(seq))
+Need value only	                    |    for item in iterable
+Need both index and value	        |    for i, item in enumerate(iterable)
+Need to modify original sequence	|    for i in range(len(seq))
+Working with dictionaries	        |    for key in dict or for key, value in dict.items()
+'''
 
 
 
