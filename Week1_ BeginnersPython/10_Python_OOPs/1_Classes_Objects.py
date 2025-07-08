@@ -113,27 +113,3 @@ class Temprature:
 t1 = Temprature()
 print(t1.celsius_to_fahrenheit(12))
 print(t1.fahrenheit_to_celcius(12))
-
-        
-
-        
-
-        
-        
-    
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-    
-    
-
-
