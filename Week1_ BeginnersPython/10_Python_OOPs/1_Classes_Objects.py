@@ -46,7 +46,7 @@ print(car1.brand, car1.name, car1.color)
 '''========================Class Attributes aand Instance Attributes======================='''
 #* In class data is the attributes like properties.
 #*attributes are the variables in classes
-#* ✅ Instance Attribute:
+#* ✅ Instance or object Attribute:
 #* Har object (yaani instance) ke apne alag attributes hotay hain.
 #* Ye attributes __init__ method ke andar set kiye jaate hain.
 #* Har object ka apna value hota hai, aur ye doosray object se independent hota hai.
@@ -70,6 +70,8 @@ print(s1.name, s1.marks)
 s2 = Student('John','50')
 print(s2.name, s2.marks)
 
+# Student.college_name = 'PGC'  # we over write the class level attribute
+
 #accessing class attrbite
 print(Student.college_name)
 
@@ -91,7 +93,29 @@ class Student:
         
 s1 = Student('Usama','100')
 s1.greet()
+
+# '''=================================Static Methods in Classes============================'''
+# #* Python mein static method ek aisa method hota hai jo na to class instance (self) ka use karta hai,
+# #* na hi class (cls) ka. Iska matlab ye method kisi object-specific ya class-specific data ko access
+# #* nahi karta.
+# #* matlab static method wab use karna chahiye jab hame class ka attributes or members ki class ma 
+# #* zaroorat nahi?"
+
+class Temprature:
+    @staticmethod
+    def celsius_to_fahrenheit(c):
+        return (c * 9/5) + 32
+    
+    @staticmethod
+    def fahrenheit_to_celcius(f):
+        return (f - 32) * 5/9
+
+t1 = Temprature()
+print(t1.celsius_to_fahrenheit(12))
+print(t1.fahrenheit_to_celcius(12))
+
         
+
         
 
         
