@@ -84,19 +84,20 @@ try:
             print(f'Multiplication : {result}')
             
         elif(choice == '/'):
-            num1 = int(input("Enter first number : "))
-            num2 = int(input("Enter second number : "))
-            result = num1 / num2
-            print(f'Division : {result}')
-            
+            try:
+                num1 = int(input("Enter first number : "))
+                num2 = int(input("Enter second number : "))
+                result = num1 / num2
+                print(f'Division : {result}')
+            except:
+                print("dont enter second number as zero if you divide")
+                
         elif(choice == 'exit'):
             print("Exiting Calculator")
             
         else:
             print('Choose the correct choice or option!!')
-       
-except ZeroDivisionError:
-    print("dont enter second number as zero if you divide")
+            
 except ValueError:
     print("Enter a number or digit!")
 finally:

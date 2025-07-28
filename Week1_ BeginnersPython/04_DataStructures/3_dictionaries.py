@@ -56,7 +56,7 @@ for value in std_dict.values():
 print("=== loop print key values ===")
 #* loop through the both key values
 for key, value in std_dict.items():
-    print(f'{key} -> {value}')
+    print(f'{key} : {value}')
     
 '''🔹 6. Copy Dictionaries'''
 #! Don't use = (it links both) like dict2 = dict1 it target the same memory location(fake copy)

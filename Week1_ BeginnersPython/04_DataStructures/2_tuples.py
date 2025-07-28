@@ -38,7 +38,7 @@ print(c)
 loop_tuple = ['for_loop', 'while_loop', 'do_while_loop']
 for x in loop_tuple:
     print(x)
-    
+
 '''🔹 5. Join Tuples'''
 tuple_1st = ("Pakistan", "Zindabad")
 tuple_2nd = ("Zindadilane", "Lahore")
@@ -90,7 +90,7 @@ print(new_tuple)
 
 #unpacking new Tuple
 print("UnPacking Tuple")
-first,second, *middle, last = new_tuple
+first,second, *middle, last = new_tuple           #*middle --> is a list 
 for x in first, second, middle, last:
     print(x)
 

@@ -1,6 +1,6 @@
 word_statistics = {}
 
-with open(r'Week1_ BeginnersPython\Exercise_Python\07_fileHandling\poem.txt','r') as f:
+with open(r'C:\Users\Admin\OneDrive\Desktop\Gen Ai\Week1_ BeginnersPython\Exercise_Python\07_fileHandling\poem.txt','r') as f:
     for line in f:
         words_list = line.split(' ')
         for word in words_list:

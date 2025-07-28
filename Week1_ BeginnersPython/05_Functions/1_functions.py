@@ -74,13 +74,13 @@ print(print_user_info(name='Usama Naeem', age='23', interst='Artificial Intellig
 Global variable ==> variable outside the function.
 Local variable ==> variable inside the function.
 '''
-x = 'I am global variable'
+y = 'I am global variable'
 
 def sample_fun():
     y = 'I am local variable'
     return y
 
-print(x)
+print(y)
 print(sample_fun())
 
 

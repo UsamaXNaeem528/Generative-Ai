@@ -3,8 +3,7 @@
 i. ✴️ Union (combine sets) ==> a|b
 ii. ✴️ Intersection (common items)  ==> a&b
 iii. ✴️ Difference (items in a but not in b)   
-iv. ✴️ Symmetric Difference 
-(items in either, but not both (don't show common values in both set show only uncommon))
+iv. ✴️ Symmetric Difference -> (items in either, but not both (don't show common values in both set show only uncommon))
 '''
 #==================Union=====================#
 a = {1,2,3}

@@ -16,7 +16,10 @@ del emp1.id
 try:
     print(f'Employe Id : {emp1.id}')
 except NameError:
-    print(f"{emp1.id} attribute not exist")
+    print("emp1 is not defined")
+except AttributeError:
+    print("emp1 does not have an 'id' attribute")
+
 
 #deleting whole object
 del emp1

@@ -83,17 +83,6 @@ print(word.endswith("on"))    # True
 # or impossible to type directly.
 # In Python, the escape character is a backslash (\).
 
-'''
-| Escape | Meaning                      | Example                    | Output               |
-| ------ | ---------------------------- | -------------------------- | -------------------- |
-| `\n`   | New line                     | `"Hello\nWorld"`           | Hello                |
-|        |                              |                            | World                |     
-| `\t`   | Tab (horizontal space)       | `"Hello\tWorld"`           | Hello    World       |
-| `\"`   | Double quote inside a string | `"She said, \"Hi!\""`      | She said, "Hi!"      |
-| `\'`   | Single quote inside a string | `'It\'s nice'`             | It's nice            |
-| `\\`   | Backslash itself             | `"Path: C:\\Users\\Usama"` | Path: C:\Users\Usama |
-'''
-
 qoute = "Learn not just to code, but to think.\nErrors teach more than success can bring.\nPatience and practice shape the way,\nOne small step, every single day."
 print(qoute)
 
