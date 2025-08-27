@@ -80,7 +80,7 @@ print(Student.college_name)
 '''=================================Methods in Classes============================'''
 #* Methods are the functions in Class.
 #* we can access it using instance or object
-#* In method we must have to pass parameter 'self' ==> def hello(self):  other wise you got erro
+#* In method we must have to pass parameter 'self' ==> def hello(self):  other wise you got error
 
 class Student:
     
