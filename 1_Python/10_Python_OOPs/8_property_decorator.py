@@ -1,4 +1,4 @@
-#property decorator means we can access function from class with paranthesis like attribute of class
+#property decorator means we can access function from class without paranthesis like attribute of class
 #like class ma funciton ha
 #
 # def sum(self):

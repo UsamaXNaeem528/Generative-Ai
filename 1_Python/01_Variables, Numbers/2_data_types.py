@@ -13,7 +13,7 @@
 
 a = 8 # int
 b = 3.2 # float
-c = 1j # complex
+c = 2 + 3j # complex class
 d = "Hello" # str
 e = [1, 2, 3] # list
 f = (1, 2, 3) # tuple
@@ -25,3 +25,5 @@ k = b"Hello" # bytes
 l = bytearray(5) # bytearray
 m = memoryview(bytes(5)) # memoryview
 n = frozenset([1, 2, 3]) # frozenset
+
+print(type(c))

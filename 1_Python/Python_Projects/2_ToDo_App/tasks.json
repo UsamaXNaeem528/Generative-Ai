@@ -1,0 +1,32 @@
+[
+    {
+        "task_number": 1,
+        "title": "Buy groceries",
+        "done": false,
+        "time": "2025-07-30 10:15:00"
+    },
+    {
+        "task_number": 2,
+        "title": "Call the dentist",
+        "done": true,
+        "time": "2025-07-29 16:20:00"
+    },
+    {
+        "task_number": 3,
+        "title": "make a python project Weather App.",
+        "done": true,
+        "time": "2025-08-01 13:48:12"
+    },
+    {
+        "task_number": 4,
+        "title": "Pay electricity bill",
+        "done": true,
+        "time": "2025-07-28 14:00:00"
+    },
+    {
+        "task_number": 5,
+        "title": "Complete the Python Project Weather App.",
+        "done": false,
+        "time": "2025-08-01 13:48:12"
+    }
+]

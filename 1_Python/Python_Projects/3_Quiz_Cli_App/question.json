@@ -1,0 +1,52 @@
+[
+    {
+        "question": "What is the capital of Pakistan?",
+        "options": {
+            "A": "Karachi",
+            "B": "Lahore",
+            "C": "Islamabad",
+            "D": "Peshawar"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Which data type is used to store True or False in Python?",
+        "options": {
+            "A": "int",
+            "B": "str",
+            "C": "bool",
+            "D": "float"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What symbol is used for comments in Python?",
+        "options": {
+            "A": "//",
+            "B": "#",
+            "C": "/* */",
+            "D": "<!-- -->"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which built-in function is used to get the length of a list in Python?",
+        "options": {
+            "A": "count()",
+            "B": "length()",
+            "C": "size()",
+            "D": "len()"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "Which keyword is used to create a function in Python?",
+        "options": {
+            "A": "def",
+            "B": "function",
+            "C": "define",
+            "D": "fun"
+        },
+        "answer": "A"
+    }
+]

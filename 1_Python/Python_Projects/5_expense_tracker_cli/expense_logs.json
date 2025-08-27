@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "date": "2025-08-08",
+        "category": "Food",
+        "amount": 850,
+        "description": "Lunch at Subway"
+    },
+    {
+        "id": 2,
+        "date": "2025-08-08",
+        "category": "Transport",
+        "amount": 200,
+        "description": "Bus ticket to office"
+    },
+    {
+        "id": 3,
+        "date": "2025-08-07",
+        "category": "Groceries",
+        "amount": 1200,
+        "description": "Weekly grocery shopping"
+    },
+    {
+        "id": 4,
+        "date": "2025-08-06",
+        "category": "Entertainment",
+        "amount": 500,
+        "description": "Movie night"
+    },
+    {
+        "id": 5,
+        "category": "Food",
+        "date": "2025-08-08",
+        "amount": 300.0,
+        "description": "Dinner at resturant"
+    },
+    {
+        "id": 6,
+        "category": "Food",
+        "date": "2025-08-08",
+        "amount": 2000.0,
+        "description": "breakfast"
+    }
+]

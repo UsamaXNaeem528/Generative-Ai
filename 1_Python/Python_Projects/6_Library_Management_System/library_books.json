@@ -1,0 +1,73 @@
+[
+    {
+        "id": 1,
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "ISBN": "9780743273565",
+        "availability": "Available",
+        "borrowed_by": null,
+        "borrow_date": null,
+        "due_date": null
+    },
+    {
+        "id": 2,
+        "title": "1984",
+        "author": "George Orwell",
+        "ISBN": "9780451524935",
+        "availability": "Available",
+        "borrowed_by": null,
+        "borrow_date": null,
+        "due_date": null
+    },
+    {
+        "id": 3,
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "ISBN": "9780061120084",
+        "availability": "Available",
+        "borrowed_by": null,
+        "borrow_date": "2025-07-30",
+        "due_date": null,
+        "borrowe_date": null
+    },
+    {
+        "id": 4,
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "ISBN": "9780261103344",
+        "availability": "Borrowed",
+        "borrowed_by": "Usama",
+        "borrow_date": "2025-08-14",
+        "due_date": "2025-08-20"
+    },
+    {
+        "id": 5,
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "ISBN": "9781503290563",
+        "availability": "Available",
+        "borrowed_by": null,
+        "borrow_date": null,
+        "due_date": null
+    },
+    {
+        "id": 6,
+        "title": "Atomic Habits",
+        "author": "James Clear",
+        "ISBN": "9780269439434",
+        "availability": "available",
+        "borrowed_by": null,
+        "borrow_date": null,
+        "due_date": null
+    },
+    {
+        "id": 7,
+        "title": "The Beast",
+        "author": "Usama",
+        "ISBN": "123457940940943",
+        "availability": "Borrowed",
+        "borrowed_by": "Harry potter",
+        "borrow_date": "2025-08-14",
+        "due_date": "2025-08-21"
+    }
+]
