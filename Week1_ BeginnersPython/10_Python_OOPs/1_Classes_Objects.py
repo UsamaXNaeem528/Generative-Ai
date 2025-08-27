@@ -100,6 +100,7 @@ s1.greet()
 # #* nahi karta.
 # #* matlab static method wab use karna chahiye jab hame class ka attributes or members ki class ma 
 # #* zaroorat nahi?"
+# #* ye class ma is liye likhe jaate ha, take code organize rahe.
 
 class Temprature:
     @staticmethod
