@@ -34,19 +34,30 @@
 #         list.append(line.strip('\n'))
 #     print(list)
 
-# Your monthly expense list (from Jan to May) looks like this,
-expense_list = [2340, 2500, 2100, 3100, 2980]
-# Write a program that asks you to enter an expense amount and program should tell you in which month that
-# expense occurred. If expense is not found in expense_list then it should print that as well.
-month_list = ["January","February","March","April","May"]
+# # Your monthly expense list (from Jan to May) looks like this,
+# expense_list = [2340, 2500, 2100, 3100, 2980]
+# # Write a program that asks you to enter an expense amount and program should tell you in which month that
+# # expense occurred. If expense is not found in expense_list then it should print that as well.
+# month_list = ["January","February","March","April","May"]
 
-exp_amount = int(input('dEnter expense amount you spend : '))
+# exp_amount = int(input('dEnter expense amount you spend : '))
 
-found = False
-for exp, month in zip(expense_list,month_list):
-    if exp_amount == exp:
-        found = True
-        print(f'{exp_amount} spend in {month}')
-        break
-if not found:
-    print(f'No expenses found in month list')
+# found = False
+# for exp, month in zip(expense_list,month_list):
+#     if exp_amount == exp:
+#         found = True
+#         print(f'{exp_amount} spend in {month}')
+#         break
+# if not found:
+#     print(f'No expenses found in month list')
+
+
+# Lets say you are running a 5 km race. 
+# Write a program that,
+# Upon completing each 1 km asks you "are you tired?"
+# If you reply "yes" then it should break and print "you didn't finish the race"
+# If you reply "no" then it should continue and ask "are you tired" on every km
+# If you finish all 5 km then it should print congratulations message
+
+for i range(0,5):
+    
