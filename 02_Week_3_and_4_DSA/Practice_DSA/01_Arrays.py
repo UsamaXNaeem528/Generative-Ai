@@ -22,6 +22,7 @@ expenses = [
     {"May" : 2190}
 ]
 
+
 #1. 
 extra_exp_feb = expenses[1]['February'] - expenses[0]['January']
 print(extra_exp_feb)
