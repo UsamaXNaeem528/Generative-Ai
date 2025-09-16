@@ -192,14 +192,10 @@ class LinkedList:
                 # curr.next = curr.next.next
                 print("Node is found at pos",pos,"==>",curr.next.data)
                 curr.next = curr.next.next
+                self.no -= 1
                 return
             pos = pos + 1
             curr = curr.next
-
-        
-        
-
-
 
 if __name__ == "__main__":
     # Testing linked list
@@ -218,5 +214,7 @@ if __name__ == "__main__":
 
     # l1.search_by_value(12)
     # l1[2]
-    l1.delete_node_by_index(1)
+    # l1.delete_node_by_index(1)
+    l1.delete_node_by_index
+    print(l1)
     print(l1)
