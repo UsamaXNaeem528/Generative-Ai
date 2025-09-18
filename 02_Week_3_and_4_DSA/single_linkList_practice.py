@@ -157,6 +157,8 @@ class LinkedList:
 if __name__ == "__main__":                              
     l1 = LinkedList()
     l1.insert_head_node(10)
+    l1.insert_head_node(20)
     l1.insert_tail_node(30)
-    l1.insert_node_at_middle(10,20)
+    # l1.insert_node_at_middle(10,20)
+    l1.del_node_by_index(2)
     print(l1)
