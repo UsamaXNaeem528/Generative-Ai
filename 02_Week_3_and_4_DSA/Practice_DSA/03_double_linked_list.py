@@ -25,7 +25,22 @@ class LinkedList:
             curr = curr.next
 
         return result[:-2]
+    
+    def print_backward(self):
+        curr = self.head
+        result = ''
+        #go to last node and reeach
+        while(curr.next != None):
+            curr = curr.next
         
+        #now move to first node from last node using prev pointer.
+        result = ''
+        while(curr.prev!=None):
+            result = result  + str(curr.data) + '->' 
+            curr = curr.prev
+        return print(result[:-2])
+                             
+                             
     def insert_head_node(self,data):
         if(self.head == None):    #if the list is empty
             new_node = Node(data)
@@ -171,9 +186,9 @@ l1.insert_tail_node(20)
 l1.insert_tail_node(30)
 l1.insert_tail_node(40)
 l1.insert_tail_node(50)
-print(l1)
+# print(l1)
 # l1.delete_node_by_value(30)
 # l1.del_node_by_index(2)
 # l1.search_by_value(50)
-l1.search_by_index(9)
-print(l1)
+l1.print_backward()
+# print(l1)
