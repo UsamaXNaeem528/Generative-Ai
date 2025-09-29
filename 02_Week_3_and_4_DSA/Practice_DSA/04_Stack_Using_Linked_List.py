@@ -95,44 +95,47 @@ def text_editor(text, pattern):
 def stack_bracket(expression):
     s = Stack()
     
-    # Mapping closing to opening brackets
-    pairs = {')': '(', '}': '{', ']': '[', '>': '<'}
-    open_para = ['(', '{', '[', '<']
-    close_para = [')', '}', ']', '>']
+    pairs = {
+            ')':'(',
+             '}':'{',
+             ']':'[',
+             '>':'<'
+            }
+    
+    open_para = ['(', '[', '{', '<']
+    close_para = [')',']','}','>']
     
     for i in expression:
-        # Push opening bracket
         if i in open_para:
             s.push(i)
         
-        # Closing bracket handling
         elif i in close_para:
-            # If stack empty → extra closing bracket
             if s.is_empty():
-                print("Stack is unbalanced - extra closing bracket found")
+                print("Stack is unbalaned -  Extra Closing bracket found")
                 return
-            
-            # Pop the top opening bracket
+
             top_value = s.pop()
             
-            # Check if it matches the expected opening
-            #[{(]
-            if pairs[i] != top_value:
-                print(f"Stack is unbalanced - mismatch found: expected {pairs[i]}, got {top_value}")
-                return
-    
-    # After traversing the expression
+            if top_value != pairs[i]:
+                print(f'Stack is unbalanced unmatched opening and closing brackets, expected{pairs[i]} but got {top_value}')
+                
     if not s.is_empty():
         print("Stack is unbalanced - some opening brackets not closed")
+        
         result = ''
-        while not s.is_empty():
-            result = s.pop() + result
-        print("Remaining unmatched opening brackets:", result)
-    else:
-        print("Stack is balanced ✅")
+        while(not s.is_empty()):
+            
+    
+            
+            
+            
+            
+            
+    
+    
 
+exp = "{[(]"       
 
-exp = "{[("       
 stack_bracket(exp)
         
     
