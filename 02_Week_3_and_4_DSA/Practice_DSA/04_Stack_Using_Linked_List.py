@@ -52,8 +52,12 @@ class Stack:
             while(temp!=None):
                 size = size + 1
                 temp =  temp.next
-            print(f'{size} items in stack')
-            
+            # print(f'{size} items in stack')
+            return size
+
+#==============================#
+# reverse a string using stack #
+#==============================#
 def reverse_str(text):
     s = Stack()
         
@@ -68,7 +72,9 @@ def reverse_str(text):
     
 # reverse_str('hello')
 
-#undo redo problem in stack
+#============================#
+# undo redo problem in stack #
+#============================#
 def text_editor(text, pattern):
     u = Stack()
     r = Stack()
@@ -91,10 +97,14 @@ def text_editor(text, pattern):
 
 # text_editor('usama','uuu')
 
-#stack bracket problem in stack
+#==============================#
+#stack bracket problem in stack#
+#==============================#
 def stack_bracket(expression):
-    s = Stack()
+    # make a stack
+    s = Stack()       
     
+    # we make a list pair brackets for matching the open with close brackets
     pairs = {
             ')':'(',
              '}':'{',
@@ -106,9 +116,11 @@ def stack_bracket(expression):
     close_para = [')',']','}','>']
     
     for i in expression:
+        #if the bracket is open then push in stack
         if i in open_para:
             s.push(i)
         
+        # if the bracket is closed then pop it 
         elif i in close_para:
             if s.is_empty():
                 print("Stack is unbalaned -  Extra Closing bracket found")
@@ -118,25 +130,72 @@ def stack_bracket(expression):
             
             if top_value != pairs[i]:
                 print(f'Stack is unbalanced unmatched opening and closing brackets, expected{pairs[i]} but got {top_value}')
+                return
                 
+    #traversing for the remain brackets in a stack
     if not s.is_empty():
         print("Stack is unbalanced - some opening brackets not closed")
         
         result = ''
         while(not s.is_empty()):
-            
+            result = s.pop() + result 
+        print("Remaining unmatched opening brackets:", result)
+    else:
+        print("Stack is balanced")            
+
+# exp = "{[(a+b)(a-b)]}"       
+# stack_bracket(exp)
+
+#==============================#
+#  Celebrity Problem in stack  #
+#==============================#
+# stack is only the Data strcuture solve the matrix problem in Order of n O(n)
+L = [
+    [0,0,1,1],
+    [0,0,1,1],
+    [0,0,1,0],
+    [0,0,1,0]
+]
+
+def find_celeb(L):
+    s = Stack()
+
+    #populate elements in stack
+    for i in range(len(L)):
+        s.push(i)
     
-            
-            
-            
-            
-            
+    #find the celeb from matrix
+    while s.size() >= 2:
+        i = s.pop()
+        j = s.pop()
+        
+        if L[i][j] == 0:
+            # j is not a celebrity means (i) dont know the (j)
+            s.push(i)
+        else:
+            # i is not celebrity
+            s.push(j)
     
+    celeb = s.pop()
+    
+    for i in range(len(L)):
+        if i != celeb:
+            if L[i][celeb] != 1 or L[celeb][i] != 0:
+                print("No one celebrity")
+                return
+    print("The celebroty is", celeb)
+
+find_celeb(L)
+
+
     
 
-exp = "{[(]"       
 
-stack_bracket(exp)
+            
+    
+
+
+
         
     
     
