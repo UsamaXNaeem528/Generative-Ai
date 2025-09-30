@@ -153,8 +153,8 @@ def stack_bracket(expression):
 L = [
     [0,0,1,1],
     [0,0,1,1],
-    [0,0,1,0],
-    [0,0,1,0]
+    [0,0,1,1],
+    [0,0,0,0]
 ]
 
 def find_celeb(L):
@@ -164,7 +164,7 @@ def find_celeb(L):
     for i in range(len(L)):
         s.push(i)
     
-    #find the celeb from matrix
+    #find a celebrity over the other members  
     while s.size() >= 2:
         i = s.pop()
         j = s.pop()
@@ -178,13 +178,14 @@ def find_celeb(L):
     
     celeb = s.pop()
     
+    #verification loop for checking the every other person knows the celeb and celeb doesnot knows
     for i in range(len(L)):
         if i != celeb:
             if L[i][celeb] != 1 or L[celeb][i] != 0:
                 print("No one celebrity")
                 return
     print("The celebroty is", celeb)
-
+    
 find_celeb(L)
 
 
