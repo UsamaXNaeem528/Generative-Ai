@@ -12,7 +12,6 @@ class LinkedList:
     
     def enqueue(self,data):
         new_node = Node(data)
-        
         #first check queue is empty (if empty then put node as front and rear both)
         if self.rear == None:
            self.rear = new_node
@@ -63,19 +62,18 @@ class LinkedList:
             
         print(count)    
 
-
 q = LinkedList()
-q.enqueue(1)
-q.enqueue(2)
-q.enqueue(3)
-q.traverse()
-print("\n")
-q.size()
-q.get_front()
-q.get_rear()
-print("\n")
+# q.enqueue(1)
+# q.enqueue(2)
+# q.enqueue(3)
+# q.traverse()
+# print("\n")
+# q.size()
+# q.get_front()
+# q.get_rear()
+# print("\n")
 
-print(q.is_empty())
+# print(q.is_empty())
                 
 
         
