@@ -33,7 +33,7 @@
 # print(first_letter)
 
 
-# Conditional Transformation:
+## Conditional Transformation:
 # Given a list of numbers [1, 2, 3, 4, 5],
 # create a new list where numbers divisible by 2 are doubled and others remain the same.
 
