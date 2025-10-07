@@ -98,13 +98,13 @@ print(factorial(5))
 # ----------------------------------------------------------
 # Factorial using loop/iteration
 # ----------------------------------------------------------
-def factorial(num):
+def factorial_loop(num):
     result = 1
     for i in range(1, num+1):
         result *= i
     return result
 
-print(factorial(5))
+print(factorial_loop(5))
 
 
 # ----------------------------------------------------------
@@ -113,12 +113,14 @@ print(factorial(5))
 def factorial_upto_n(num):
     result = 1
     for i in range(1, num+1):
-        result *= i   #result = result * i
+        result *= i   
         yield result
 
 def print_factorial():
     for i in factorial_upto_n(5):
         print(i)
+
+print_factorial()
 
 
 # ----------------------------------------------------------
@@ -137,7 +139,127 @@ def isPrime(num):
 
 isPrime(31)
 
+# # -------------------------------------------------------------------------------
+# # Write a generator generate_squares(n) that yields squares of numbers from 1 to n.
+# # -------------------------------------------------------------------------------
 
+def generate_squares(num):
+    if num<1:
+        print("Numbers must be greater than 1")
+        return
 
+    for i in range(1, num+1):
+        result = i**2
+        yield result
 
+for i in generate_squares(2):
+    print(i)
+    
+# # ----------------------------------------------------------------------
+# # Create a generator countdown(n) that yields numbers from n down to 1.
+# # ----------------------------------------------------------------------
 
+def countdown(num):
+    while(num>=1):
+        result = num
+        num -= 1
+        yield result
+
+for i in countdown(10):
+    print(i)
+
+# # --------------------------------------------------------------------------------
+# # Make a generator infinite_numbers() that yields numbers starting from 1 infinitely.
+# # -------------------------------------------------------------------------------
+
+def infinite_numbers():
+    num = 1
+    while True:
+        yield num
+        num += 1
+
+for i in infinite_numbers():
+    print(i)
+    if i == 10:
+        break
+
+# # ----------------------------------------------------------------------------
+# # Create a generator char_generator(string) that yields one character at a time.
+# # ----------------------------------------------------------------------------
+
+def char_generator(string):
+    for i in string:
+        ch = i
+        yield ch
+
+for i in char_generator('usama'):
+    print(i)
+
+# # ------------------------------------------------------------------------------------
+# # Write a generator read_lines(filename) that reads a text file line by line using yield.
+# # # ------------------------------------------------------------------------------------
+def read_lines(file_path):
+    with open(file_path, 'r') as file:
+        for line in file:
+            yield line.strip()
+
+# Create a dummy file for the example
+with open('index.txt', 'w') as f:
+    f.write("Line one\n")
+    f.write("Line two\n")
+    f.write("Line three\n")
+
+for i in read_lines(r'index.txt'):
+    print(i)
+            
+# # ------------------------------
+# # Alternate Even–Odd Generator
+# # Make one generator even_odd_generator(n) that first yields all even numbers,
+# # then all odd numbers up to n.
+# # ------------------------------
+
+def even_odd_generator(num):
+    if num<=1:
+        print("Number must be greater than 1")
+        return
+    for i in range(1,num+1):
+        if i%2 == 0:
+            yield i
+    
+    for i in range(1,num+1):
+        if i%2 != 0:
+            yield i
+
+for i in even_odd_generator(10):
+    print(i)
+
+# # ---------------------------------------------------------------
+# # Make a generator running_total(nums) that yields cumulative sums.
+# # ---------------------------------------------------------------
+
+# # Example:
+# # If nums = [1, 2, 3, 4]
+# # then it should yield → 1, 3, 6, 10
+            
+def running_total(num_lst):
+    result = 0
+    for i in num_lst:
+        result += i
+        yield result
+    
+for i in running_total([1,2,3,4]):
+    print(i)
+
+## --------------------------------------------------------
+# # Fibonaci series upto n (number) using yield and recursion
+## ---------------------------------------------------------
+def fibonaci_recursive(num, a=0, b=1):
+    if num == 0:
+        return
+    
+    yield a
+    yield from fibonaci_recursive(num - 1, a=b, b=a+b)
+
+        
+for i in fibonaci_recursive(5):
+    print(i)

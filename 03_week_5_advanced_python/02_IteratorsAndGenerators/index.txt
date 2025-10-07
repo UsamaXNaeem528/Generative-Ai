@@ -1,0 +1,5 @@
+Python is a powerful language.
+Generators help save memory.
+Iterators are used to loop over data.
+List comprehensions make code cleaner.
+Practice makes you perf

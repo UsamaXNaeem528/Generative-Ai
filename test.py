@@ -165,5 +165,7 @@
 
 
 
-my_str = 'usama'
-print(my_str[0])
+# my_str = 'usama'
+# print(my_str[0])
+
+
