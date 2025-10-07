@@ -1,6 +1,6 @@
 # ==========================================================
-# A generator in Python is a special type of function that 
-# uses the yield keyword to produce a sequence of values, 
+# A generator is a special type of iterator
+# that yields values one by one instead of returning all values at once.
 # returning them one at a time as an iterator, instead of 
 # returning them all at once like a normal function.
 #
@@ -136,3 +136,8 @@ def isPrime(num):
     print(f"Number {num} is a prime number")
 
 isPrime(31)
+
+
+
+
+
