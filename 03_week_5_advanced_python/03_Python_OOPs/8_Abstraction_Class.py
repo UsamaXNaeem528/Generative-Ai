@@ -98,3 +98,77 @@ class Bike(Vehicle):
 # Payment gateways: abstract PaymentMethod, concrete PayPal, CreditCard.
 
 # Vehicle simulation: abstract Vehicle, concrete Car, Bike.
+
+
+
+# Problem:
+# Create an abstract class DataStore with abstract methods:
+
+# save(data)
+
+# load()
+
+# Then create two subclasses:
+
+# FileStore → saves/loads data from a file
+
+# MemoryStore → stores data in a dictionary
+
+# Demonstrate both types.
+
+# Data Storage Interface
+import json
+class DataStore(ABC):
+    @abstractmethod
+    def save(self, file_path, data):
+        pass
+    
+    @abstractmethod
+    def load(self, file_path):
+        pass
+
+class FileStore(DataStore):
+    
+    def load(self,file_path):
+        try:
+            with open(file_path, 'r', encoding='utf-8') as file:
+                return json.load(file)
+        except json.decoder.JSONDecodeError as e:
+            return []
+      
+    def save(self,file_path,data):
+        data_dict = self.load(file_path)
+        data_dict.append(data)
+        with open(file_path, 'w', encoding='utf-8') as file:
+            json.dump(data_dict, file, indent=4)
+
+class MemoryStore(DataStore):
+    def __init__(self):
+        self.memory = []
+        
+    def save(self, data):
+        self.memory.append(data)
+        print("Data Saved in memory")
+    
+    def load(self):
+        return self.memory
+
+
+file_path = r'03_week_5_advanced_python\03_Python_OOPs\data.json'
+# f1 = FileStore()
+# print(f1.load(file_path))  # []
+# data = {"data":"Hassan"}
+# f1.save(file_path,data)
+
+m1 = MemoryStore()
+data = {'data':"Usama"}
+m1.save(data)
+print(m1.load())
+
+
+
+   
+        
+        
+        
+    

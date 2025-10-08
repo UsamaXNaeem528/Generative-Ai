@@ -70,6 +70,7 @@ print(s1.name, s1.marks)
 s2 = Student('John','50')
 print(s2.name, s2.marks)
 
+
 # Student.college_name = 'PGC'  # we over write the class level attribute
 
 #accessing class attrbite
