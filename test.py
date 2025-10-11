@@ -168,3 +168,61 @@
 # my_str = 'usama'
 # print(my_str[0])
 
+# my_str = 'level'
+# rev_str = ''
+# j = -1
+
+# for i in range(len(my_str)):
+#     rev_str += my_str[j]
+#     j -= 1
+    
+# if rev_str == my_str:
+#     print("String is Palindrome")
+# else:
+#     print("Not Palindrome")
+
+# # print(rev_str)
+
+
+# original_num = 1221
+# num = original_num
+# rev = 0
+
+# while num>0:
+#     ld = num % 10
+#     rev = rev * 10 + ld
+#     num = num // 10
+
+# if rev==original_num:
+#     print("Number is P")
+# else:
+#     print("No P")
+
+
+# print(eval('8+5'))
+
+my_str = '1 + 5'
+# print(my_str)
+# for i in my_str.split(' '):
+#     if int(i):
+#         a = int(i) 
+
+my_lst = my_str.split(' ')
+print(my_lst)
+
+
+    
+    
+    
+    
+
+
+
+
+
+    
+
+    
+
+    
+    
