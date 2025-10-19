@@ -1,0 +1,4 @@
+take username and password
+load the user names and passwords from json file
+iterate these username and password
+
