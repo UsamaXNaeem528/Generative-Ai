@@ -17,6 +17,6 @@ class Data:
             json.dump(data, json_file, indent=4)
     
 if __name__ == '__main__':
-    d1 = Data(r'03_week_5_advanced_python\Python_Projects_IBHWSS\05_Student_Performance_Analyzer\users.json')
+    d1 = Data(r'03_week_5_advanced_python\Python_Projects\05_Student_Performance_Analyzer\users.json')
     print(d1.load_all_data())
     print(d1.file_path)

@@ -3,7 +3,7 @@
 from DataManager import Data
 
 class MarksManager:
-    def __init__(self, file_path=r'03_week_5_advanced_python/Python_Projects_IBHWSS/05_Student_Performance_Analyzer/marks_records.json'):
+    def __init__(self, file_path=r'03_week_5_advanced_python/Python_Projects/05_Student_Performance_Analyzer/marks_records.json'):
         
         self.file_path = file_path
         self.data_obj = Data(self.file_path)
