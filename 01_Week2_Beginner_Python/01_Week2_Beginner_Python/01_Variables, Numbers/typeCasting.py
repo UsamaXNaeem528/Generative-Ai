@@ -17,7 +17,7 @@ print(type(c))
 # !str to int conversion will not work if the string is not a number
 int_num = 10
 string = str(int_num)
-print(type(str))
+print(type(string))
 
 str_num = "10"
 int_num1 = int(str_num)

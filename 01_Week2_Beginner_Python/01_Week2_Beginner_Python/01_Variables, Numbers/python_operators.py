@@ -61,3 +61,4 @@ c = [1,2,3]
 print(a is b)  # True
 print(c is a)  # False (same content, different memory)
 print(5**2)
+print(b is a)  # True
