@@ -6,7 +6,7 @@ std_info = {
 def std_to_dict(name, roll_no, email):
     std_info[roll_no] = {
         "name" : name,
-        "email" : email
+        "email" : email,
     }
 
 def std_print():

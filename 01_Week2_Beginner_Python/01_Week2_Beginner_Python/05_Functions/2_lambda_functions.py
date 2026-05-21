@@ -16,6 +16,11 @@ mul = lambda a, b : a * b
 print(mul(2,3))
 
 
+#⚡ Map Function
+#🔹 map() in Python is used to apply a function to every item of an iterable (like a list, tuple, set, etc.).
+# It transforms data item-by-item. 
+# map functions used the built in functions, or can be use user defined functions
+
 '''✅ Use in map(), filter(), and sorted()'''
 '''🔸 Using with map()'''
 

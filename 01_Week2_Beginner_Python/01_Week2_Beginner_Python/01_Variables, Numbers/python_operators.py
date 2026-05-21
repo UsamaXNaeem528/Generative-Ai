@@ -55,10 +55,29 @@ Used to compare memory locations of two objects.
 | `is not` | True if they point to different objects | `a is not b` |
 '''
 
-a = [1,2,3]
-b = a
-c = [1,2,3]
-print(a is b)  # True
-print(c is a)  # False (same content, different memory)
-print(5**2)
-print(b is a)  # True
+# a = [1,2,3]
+# b = a
+# c = [1,2,3]
+# print(a is b)  # True
+# print(c is a)  # False (same content, different memory)
+# print(5**2)
+# print(b is a)  # True
+
+
+
+# Concept of Floor Division in Python
+# Floor airthmetic operator returns the, integer that is less than or equal to value?
+#Python applies floor: 
+#“Floor” means:
+# Go to the greatest integer that is still less than or equal to the value.
+# Floor is always: greatest integer ≤ value
+# For negatives, “next integer” means more negative, not “smaller in digit count”
+
+
+#Let's see some examples to understand this better with positive and negative numbers:
+print(5//2)   # Output: 2 (floor of 2.5 is 2)
+print(-5//2)  # Output: -3 (floor of -2.5 is -3)
+
+print(3//2)
+
+

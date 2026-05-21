@@ -39,7 +39,8 @@ c3 = 10
 
 a1 = int(a1)
 b2 = float(b2)
-print(f'sum of a1 + b2 + c3 = {a1 + b2 + c3}')
+print(f'Sum of a + b + c = {a1 + b2 + c3}')
+
 
 
 
