@@ -23,6 +23,7 @@ print(mul(2,3))
 
 '''✅ Use in map(), filter(), and sorted()'''
 '''🔸 Using with map()'''
+'''map(function, iterable)'''
 
 nums = [1,3,5,7,9]
 square = list(map(lambda x : x**2, nums)) #*maps the nums list to expression to find square. 
@@ -30,7 +31,7 @@ print(square)
 
 '''🔸 Using with filter()  ==> filter list, tuple, dictionaries elements on specific condition'''
 '''like filtering a odd number from a tuples of natural numbers'''
-
+'''filter(fucntion, iterable)'''
 natural_nums = (1,2,3,4,5,6,7,8,10,11,12,13,14,15)
 odd_nums = tuple(filter(lambda x : x % 2 != 0, natural_nums))
 print(odd_nums)   #* (1, 3, 5, 7, 11, 13, 15)
