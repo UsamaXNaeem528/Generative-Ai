@@ -1,0 +1,58 @@
+{
+    "players": [
+        {
+            "name": "Babar Azam",
+            "age": 31,
+            "role": "Batsman",
+            "batting_style": "Right-hand bat",
+            "bowling_style": "Right-arm off break",
+            "matches": 300,
+            "runs": 14000
+        },
+        {
+            "name": "Mohammad Rizwan",
+            "age": 34,
+            "role": "Wicketkeeper-Batsman",
+            "batting_style": "Right-hand bat",
+            "bowling_style": "None",
+            "matches": 250,
+            "runs": 9000
+        },
+        {
+            "name": "Shaheen Shah Afridi",
+            "age": 26,
+            "role": "Bowler",
+            "batting_style": "Left-hand bat",
+            "bowling_style": "Left-arm fast",
+            "matches": 180,
+            "wickets": 350
+        },
+        {
+            "name": "Haris Rauf",
+            "age": 32,
+            "role": "Bowler",
+            "batting_style": "Right-hand bat",
+            "bowling_style": "Right-arm fast",
+            "matches": 150,
+            "wickets": 280
+        },
+        {
+            "name": "Fakhar Zaman",
+            "age": 36,
+            "role": "Opening Batsman",
+            "batting_style": "Left-hand bat",
+            "bowling_style": "Slow left-arm orthodox",
+            "matches": 220,
+            "runs": 8000
+        },
+        {
+            "name": "Mohammad Amir",
+            "age": 33,
+            "role": "Bowler",
+            "batting_style": "Right-hand bat",
+            "bowling_style": "Left-arm fast",
+            "matches": 150,
+            "wickets": 240
+        }
+    ]
+}

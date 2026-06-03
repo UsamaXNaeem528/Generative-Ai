@@ -1,5 +1,5 @@
 # '''7. ✅Working with CSV Files'''
-# '''Reading CSV Files'''
+'''Reading CSV Files'''
 import csv
 with open(r'Week1_ BeginnersPython\07_File_handling\data.csv','r') as file:
     reader = csv.reader(file)
