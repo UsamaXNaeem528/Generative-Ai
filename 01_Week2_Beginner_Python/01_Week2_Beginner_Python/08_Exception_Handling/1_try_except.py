@@ -58,8 +58,8 @@ else:
 finally:
     print("Final block will always execute.")
 
+# Example Calculator with Try Except
 
-#* Example Calculator
 try:
     print("Enter your choice: +, -, *, / (type 'exit' to quit)")
     choice = ''
@@ -89,11 +89,12 @@ try:
                 num2 = int(input("Enter second number : "))
                 result = num1 / num2
                 print(f'Division : {result}')
-            except:
+            except ZeroDivisionError:
                 print("dont enter second number as zero if you divide")
                 
         elif(choice == 'exit'):
             print("Exiting Calculator")
+            break
             
         else:
             print('Choose the correct choice or option!!')
@@ -102,8 +103,6 @@ except ValueError:
     print("Enter a number or digit!")
 finally:
     print('Type exit for exit!')
-
-
 
 
 
