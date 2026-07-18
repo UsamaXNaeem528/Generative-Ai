@@ -15,7 +15,6 @@ i. Write a program that asks user for operation. Value of operations could be,
         list (like info, ril etc) then it will append the price to the list. 
         Otherwise it will create new entry in your dictionary.
         For example entering 'tata' and 560 will add tata ==> [560] to the dictionary of stocks.
-
 '''
 stocks = {
     'info' : [600, 630, 620],
