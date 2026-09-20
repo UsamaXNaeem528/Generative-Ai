@@ -1,0 +1,120 @@
+'''
+1. Load the dataset.
+   - Read CSV / Excel / JSON / database data.
+   - Inspect shape, columns, data types and basic statistics.
+
+2. Check the data structure.
+   - Check number of rows and columns.
+   - Check column names.
+   - Check data types.
+   - Identify numerical, categorical, datetime and text columns.
+   - Check for unexpected or incorrectly typed values.
+
+3. Check missing values.
+   - Find missing/null/NaN values.
+   - Calculate missing-value count and percentage for each column.
+   - If a column has too many missing values, consider dropping the column.
+   - Otherwise fill missing values using a suitable technique:
+       - Numerical → mean / median
+       - Categorical → mode
+       - Time-series → forward fill / backward fill / interpolation
+       - Group-based data → group mean/median/mode
+       - Other suitable domain-specific aggregation.
+
+4. Check infinite values.
+   - Check for +∞ and -∞.
+   - Convert infinite values to NaN.
+   - Fill the resulting NaN values using an appropriate method
+     such as mean, median, mode, interpolation, etc.
+
+5. Check duplicate rows.
+   - Identify completely duplicated rows.
+   - Remove duplicate rows when they represent repeated records.
+   - If duplicates are meaningful, investigate before dropping them.
+
+6. Check inconsistent values.
+   - Check inconsistent spelling/capitalization.
+       Example: "Male", "male", "M"
+   - Check extra spaces.
+       Example: " Lahore " → "Lahore"
+   - Check inconsistent categories/labels.
+   - Standardize values where appropriate.
+
+7. Check invalid or impossible values.
+   - Identify values outside the valid/domain range.
+       Example: age < 0 or age > 120
+       Example: percentage < 0 or percentage > 100
+   - Correct, replace or remove them based on domain knowledge.
+
+8. Handle outliers.
+   - Detect unusually low/high values.
+   - Use suitable methods such as:
+       - IQR / Quartile method
+       - Z-score / Standard deviation
+       - MAD (Median Absolute Deviation)
+       - Domain-specific thresholds
+   - Do NOT automatically delete every outlier.
+   - Decide whether the outlier is an error, a valid observation,
+     or an important rare case.
+   - If appropriate, cap/winsorize, transform, replace or remove it.
+
+9. Check data distributions.
+   - Inspect numerical distributions.
+   - Identify highly skewed variables.
+   - Apply transformations when appropriate:
+       - log transformation
+       - square-root transformation
+       - Box-Cox / Yeo-Johnson
+
+10. Check categorical variables.
+    - Identify rare categories.
+    - Combine categories where appropriate.
+    - Encode categorical variables if required:
+        - One-hot encoding
+        - Label/ordinal encoding
+        - Target encoding (when appropriate)
+
+11. Check numerical scaling.
+    - If required by the machine-learning algorithm, scale numerical
+      features using:
+        - StandardScaler
+        - MinMaxScaler
+        - RobustScaler
+    - Fit the scaler only on training data.
+
+12. Check date/time columns.
+    - Convert date columns to proper datetime format.
+    - Handle invalid dates.
+    - Extract useful features such as:
+        - year
+        - month
+        - day
+        - weekday
+        - hour
+
+13. Check target/label column.
+    - Check missing target values.
+    - Check incorrect labels.
+    - Check class imbalance for classification problems.
+    - Make sure the target column is not accidentally used as an input feature.
+
+14. Check data leakage.
+    - Make sure information from the future or target variable is not
+      accidentally included in the features.
+    - Perform preprocessing using training data before applying it to
+      validation/test data.
+
+15. Validate the cleaned dataset.
+    - Re-check missing values.
+    - Re-check infinite values.
+    - Re-check duplicates.
+    - Re-check invalid values.
+    - Re-check outliers.
+    - Confirm data types.
+    - Confirm expected row/column counts.
+    - Check summary statistics again.
+
+16. Save/export the cleaned dataset.
+    - Save the processed dataset.
+    - Keep a record of what transformations were performed.
+'''
